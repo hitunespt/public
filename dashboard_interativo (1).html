@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Interativo</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Dashboard Interativo</h1>
+    <div id="coimas_por_tipo_de_infracao"></div>
+    <div id="perda_de_pontos_por_tipo_de_infracao"></div>
+    <div id="consequencias_por_pontos_restantes"></div>
+    <script>
+        // Gráfico de Coimas por Tipo de Infração
+        var data1 = [{
+            x: ['Leve', 'Grave', 'Muito Grave'],
+            y: [300, 1250, 2500],
+            type: 'bar'
+        }];
+        Plotly.newPlot('coimas_por_tipo_de_infracao', data1);
+
+        // Gráfico de Perda de Pontos por Tipo de Infração
+        var data2 = [{
+            x: ['Leve', 'Grave', 'Muito Grave', 'Crime'],
+            y: [0, 3, 5, 6],
+            type: 'bar'
+        }];
+        Plotly.newPlot('perda_de_pontos_por_tipo_de_infracao', data2);
+
+        // Gráfico de Consequências por Pontos Restantes
+        var data3 = [{
+            x: ['5 ou 4', '3, 2 ou 1', '0'],
+            y: ['Formação', 'Exame Teórico', 'Cassação'],
+            type: 'bar'
+        }];
+        Plotly.newPlot('consequencias_por_pontos_restantes', data3);
+    </script>
+</body>
+</html>
