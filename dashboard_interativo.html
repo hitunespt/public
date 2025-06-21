@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Interativo - Infrações e Sistema de Pontos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dashboard Interativo - Infrações e Sistema de Pontos</h1>
+    </header>
+    <nav>
+        <a href="#coimas">Coimas por Tipo de Infração</a>
+        <a href="#pontos">Perda de Pontos por Tipo de Infração</a>
+        <a href="#consequencias">Consequências por Pontos Restantes</a>
+    </nav>
+    <main>
+        <section id="coimas">
+            <h2>Coimas por Tipo de Infração</h2>
+            <iframe src="coimas_por_tipo_de_infracao.html"></iframe>
+        </section>
+        <section id="pontos">
+            <h2>Perda de Pontos por Tipo de Infração</h2>
+            <iframe src="perda_de_pontos_por_tipo_de_infracao.html"></iframe>
+        </section>
+        <section id="consequencias">
+            <h2>Consequências por Pontos Restantes</h2>
+            <iframe src="consequencias_por_pontos_restantes.html"></iframe>
+        </section>
+    </main>
+</body>
+</html>
