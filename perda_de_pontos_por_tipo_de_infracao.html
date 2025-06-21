@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perda de Pontos por Tipo de Infração</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Perda de Pontos por Tipo de Infração</h1>
+    <div id="perda_de_pontos_por_tipo_de_infracao"></div>
+    <script>
+        var data = [{
+            x: ['Leve', 'Grave', 'Muito Grave', 'Crime'],
+            y: [0, 3, 5, 6],
+            type: 'bar'
+        }];
+        Plotly.newPlot('perda_de_pontos_por_tipo_de_infracao', data);
+    </script>
+</body>
+</html>

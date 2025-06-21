@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consequências por Pontos Restantes</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Consequências por Pontos Restantes</h1>
+    <div id="consequencias_por_pontos_restantes"></div>
+    <script>
+        var data = [{
+            x: ['5 ou 4', '3, 2 ou 1', '0'],
+            y: ['Formação', 'Exame Teórico', 'Cassação'],
+            type: 'bar'
+        }];
+        Plotly.newPlot('consequencias_por_pontos_restantes', data);
+    </script>
+</body>
+</html>

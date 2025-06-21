@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coimas por Tipo de Infração</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Coimas por Tipo de Infração</h1>
+    <div id="coimas_por_tipo_de_infracao"></div>
+    <script>
+        var data = [{
+            x: ['Leve', 'Grave', 'Muito Grave'],
+            y: [300, 1250, 2500],
+            type: 'bar'
+        }];
+        Plotly.newPlot('coimas_por_tipo_de_infracao', data);
+    </script>
+</body>
+</html>
